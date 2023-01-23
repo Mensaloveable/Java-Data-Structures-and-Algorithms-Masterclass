@@ -1,5 +1,6 @@
 package com.loveable.recursion;
 
+import com.loveable.recursion.interviewQuestion.GCD;
 import com.loveable.recursion.interviewQuestion.PowerOfANumber;
 import com.loveable.recursion.interviewQuestion.SumOfDigitsInPositiveInteger;
 
@@ -17,9 +18,14 @@ public class Recursion {
         //Sum of Digits of a positive integer
         int sum = SumOfDigitsInPositiveInteger.sumOfDigitsInPositiveInteger(112);
         System.out.printf("Sum of digits of %d is %d%n", 112, sum);
- */
+
         //Power of a number
         int ans = PowerOfANumber.power(2,0);
+        System.out.println(ans);
+
+ */
+        //GCD
+        int ans = GCD.gcd(48, 18);
         System.out.println(ans);
     }
 
