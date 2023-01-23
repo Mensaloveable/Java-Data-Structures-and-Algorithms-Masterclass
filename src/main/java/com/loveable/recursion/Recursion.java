@@ -1,12 +1,13 @@
 package com.loveable.recursion;
 
+import com.loveable.recursion.interviewQuestion.DecimalToBinary;
 import com.loveable.recursion.interviewQuestion.GCD;
 import com.loveable.recursion.interviewQuestion.PowerOfANumber;
 import com.loveable.recursion.interviewQuestion.SumOfDigitsInPositiveInteger;
 
 public class Recursion {
     public static void main(String[] args) {
-/**
+
         //Factorial
         int factorial5 = Factorial.factorial(5);
         System.out.println("The factorial of 5 is " + factorial5);
@@ -23,9 +24,12 @@ public class Recursion {
         int ans = PowerOfANumber.power(2,0);
         System.out.println(ans);
 
- */
         //GCD
-        int ans = GCD.gcd(48, 18);
+        int gdc = GCD.gcd(48, 18);
+        System.out.println(ans);
+
+        //Decimal to Binary
+        int binary = DecimalToBinary.decimalToBinary(4);
         System.out.println(ans);
     }
 
