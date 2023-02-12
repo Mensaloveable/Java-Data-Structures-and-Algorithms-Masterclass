@@ -1,4 +1,4 @@
-package com.loveable;
+package com.loveable.recursion;
 
 public class Main {
     public static void main(String[] args) {
