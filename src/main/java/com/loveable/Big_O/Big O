@@ -4,12 +4,16 @@ BIG O NOTATIONS
 - Big Ω (Big Omega) => Is the complexity used to describe the best case running time for a given algorithm.
 - Big θ (Big Theta) => Is used for analyzing the average-case complexity of an algorithm.
 
-Runtime Complexity
+
+RUNTIME COMPLEXITY
 
 Complexity                  Name                    Sample
 O(1)                        Constant            Accessing specific element
 O(N)                        Linear              Single loop
-O(LogN)                     Logarithmic         Finding element in sorted array
-O(N²)                       Quadratic           Nexted loop
+O(LogN)                     Logarithmic         Incomplete loop
+O(N²)                       Quadratic           Nexted loop of same array
 O(2^N)                      Exponential         Double recursion
+
+
+SPACE COMPLEXITY
 
