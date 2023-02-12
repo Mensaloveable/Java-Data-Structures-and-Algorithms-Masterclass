@@ -8,7 +8,8 @@ Runtime Complexity
 
 Complexity                  Name                    Sample
 O(1)                        Constant            Accessing specific element
-O(n)                        Linear              Single loop
-O(logn)                     Logarithmic         Finding element in sorted array
-O(n²)                       Quadratic           Nexted loop
-O(2^n)                      Exponential         Double recursion
+O(N)                        Linear              Single loop
+O(LogN)                     Logarithmic         Finding element in sorted array
+O(N²)                       Quadratic           Nexted loop
+O(2^N)                      Exponential         Double recursion
+
