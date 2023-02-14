@@ -1,9 +1,6 @@
 package com.loveable.array;
 
-import com.loveable.array.interviewQuestion.FindTheMissingNumber;
-import com.loveable.array.interviewQuestion.MaxProductOfTwoIntegers;
-import com.loveable.array.interviewQuestion.SearchInArray;
-import com.loveable.array.interviewQuestion.TwoSum;
+import com.loveable.array.interviewQuestion.*;
 
 import java.util.Arrays;
 
@@ -12,6 +9,7 @@ public class Main {
         System.out.println("***Find The Missing Number***");
         int[] array1 = {1, 2, 3, 4, 6, 7, 8, 9, 10, 11};
         int[] array2 = {30, 5, 90, 6, 80, 82, 58, 3};
+        int[] array3 = {30, 5, 90, 6, 80, 6, 82, 58, 3};
         int missing = FindTheMissingNumber.missingNumber(array1);
         System.out.println("Missing number is: " + missing);
 
@@ -34,5 +32,11 @@ public class Main {
         int max2 = MaxProductOfTwoIntegers.maxProduct(array2);
         System.out.println("The maximum product in array " + Arrays.toString(array1) + " is " + max1);
         System.out.println("The maximum product in array " + Arrays.toString(array2) + " is " + max2);
+
+        System.out.println("***Is Unique***");
+        boolean unique1 = IsUnique.unique(array1);
+        boolean unique2 = IsUnique.unique(array3);
+        System.out.println("Array " + Arrays.toString(array1) + " is " + (unique1 ? "" : "not ") + "unique");
+        System.out.println("Array " + Arrays.toString(array3) + " is " + (unique2 ? "" : "not ") + "unique");
     }
 }

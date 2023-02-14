@@ -1,7 +1,7 @@
 package com.loveable.array.interviewQuestion;
 
 public class IsUnique {
-    public boolean unique(int[] array){
+    public static boolean unique(int[] array){
         for (int i = 0; i < array.length; i++) {
             for (int j = 0; j < array.length; j++) {
                 if (i == j)
