@@ -34,8 +34,8 @@ public class Main {
         System.out.println("The maximum product in array " + Arrays.toString(array2) + " is " + max2);
 
         System.out.println("***Is Unique***");
-        boolean unique1 = IsUnique.unique(array1);
-        boolean unique2 = IsUnique.unique(array3);
+        boolean unique1 = UniqueArray.unique(array1);
+        boolean unique2 = UniqueArray.unique(array3);
         System.out.println("Array " + Arrays.toString(array1) + " is " + (unique1 ? "" : "not ") + "unique");
         System.out.println("Array " + Arrays.toString(array3) + " is " + (unique2 ? "" : "not ") + "unique");
 

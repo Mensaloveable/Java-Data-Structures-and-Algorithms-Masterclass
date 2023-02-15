@@ -1,6 +1,6 @@
 package com.loveable.string.interviewQuestion;
 
-public class isUnique {
+public class UniqueString {
     /**
      * {@code @Question:} Is Unique: Implement an algorithm to determine if a string has all unique characters.
      * <p>

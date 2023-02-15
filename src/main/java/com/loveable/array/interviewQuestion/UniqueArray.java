@@ -1,6 +1,6 @@
 package com.loveable.array.interviewQuestion;
 
-public class IsUnique {
+public class UniqueArray {
     public static boolean unique(int[] array){
         for (int i = 0; i < array.length; i++) {
             for (int j = 0; j < array.length; j++) {
