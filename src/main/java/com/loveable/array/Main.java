@@ -47,5 +47,10 @@ public class Main {
         boolean permute2 = Permutation.permute(array1, array3);
         System.out.println("Array " + Arrays.toString(array1) + " and " + Arrays.toString(array2) + " " + (permute1 ? "permute" : "does not permute"));
         System.out.println("Array " + Arrays.toString(array1) + " and " + Arrays.toString(array3) + " " + (permute2 ? "permute" : "does not permute"));
+
+        System.out.println("***Rotate Matrix***");
+        int[][] array4 = {{1,2,3}, {4,5,6}, {7,8,9}};
+        int[][] rotate = RotateMatrix.rotate(array4);
+        System.out.println(Arrays.deepToString(array4) +" rotation is: "+Arrays.deepToString(rotate));
     }
 }
