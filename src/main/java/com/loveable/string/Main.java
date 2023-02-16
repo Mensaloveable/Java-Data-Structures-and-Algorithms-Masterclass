@@ -1,6 +1,7 @@
 package com.loveable.string;
 
 import com.loveable.string.interviewQuestion.Permutation;
+import com.loveable.string.interviewQuestion.URLify;
 import com.loveable.string.interviewQuestion.UniqueString;
 
 public class Main {
@@ -24,6 +25,10 @@ public class Main {
 
         System.out.println(str3 + " and " + str4 + (permute1 ? "" : " does not") + " permute");
         System.out.println(str2 + " and " + str4 + (permute2 ? "" : " does not") + " permute");
-    }
 
+        System.out.println("***URLify***");
+        str4 = "i love java ";
+        String urlify = URLify.urlify(str4);
+        System.out.println(urlify);
+    }
 }
