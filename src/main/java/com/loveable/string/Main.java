@@ -1,5 +1,6 @@
 package com.loveable.string;
 
+import com.loveable.string.interviewQuestion.OneAway;
 import com.loveable.string.interviewQuestion.Permutation;
 import com.loveable.string.interviewQuestion.URLify;
 import com.loveable.string.interviewQuestion.UniqueString;
@@ -30,5 +31,12 @@ public class Main {
         str4 = "i love java ";
         String urlify = URLify.urlify(str4);
         System.out.println(urlify);
+
+        System.out.println("***One Away***");
+        boolean b = OneAway.hasOneOrZeroEdit("pale", "ple"); //true
+        boolean b1 = OneAway.hasOneOrZeroEdit("pales", "pale"); //true
+        boolean b2 = OneAway.hasOneOrZeroEdit("pale", "bale"); //true
+        boolean b3 = OneAway.hasOneOrZeroEdit("pale", "bake"); //false
+        System.out.println(b + " and " + b1 + " and " + b2 + " and " + b3);
     }
 }
