@@ -17,10 +17,6 @@ public class Permutation {
         Arrays.sort(charArray1);
         Arrays.sort(charArray2);
 
-        for (int i = 0; i < word1.length(); i++) {
-            if (charArray1[i] != charArray2[i])
-                return false;
-        }
-        return true;
+        return Arrays.equals(charArray1, charArray2);
     }
 }
