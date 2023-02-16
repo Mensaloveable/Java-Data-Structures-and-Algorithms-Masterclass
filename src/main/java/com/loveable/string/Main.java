@@ -33,7 +33,7 @@ public class Main {
         System.out.println(urlify);
 
         System.out.println("***One Away***");
-        boolean b = OneAway.hasOneOrZeroEdit("pale", "ple"); //true
+        boolean b = OneAway.hasOneOrZeroEdit("abcd", "abc"); //true
         boolean b1 = OneAway.hasOneOrZeroEdit("pales", "pale"); //true
         boolean b2 = OneAway.hasOneOrZeroEdit("pale", "bale"); //true
         boolean b3 = OneAway.hasOneOrZeroEdit("pale", "bake"); //false
