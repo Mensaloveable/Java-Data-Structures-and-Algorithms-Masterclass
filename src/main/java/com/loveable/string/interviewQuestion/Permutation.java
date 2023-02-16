@@ -1,6 +1,6 @@
 package com.loveable.string.interviewQuestion;
 
-import java.util.Collections;
+import java.util.Arrays;
 
 public class Permutation {
     /**
@@ -8,19 +8,19 @@ public class Permutation {
      * other
      */
     public static boolean permute(String word1, String word2) {
-//        Collections.sort();
-        String [] strArray = word1.split("");
-        boolean flag = false;
 
-        if(word1.length() != word2.length())
-            return false;
+        if (word1.length() != word2.length()) return false;
+
+        char[] charArray1 = word1.toCharArray();
+        char[] charArray2 = word2.toCharArray();
+
+        Arrays.sort(charArray1);
+        Arrays.sort(charArray2);
 
         for (int i = 0; i < word1.length(); i++) {
-            if (word2.contains(strArray[i])) {
-                flag = true;
-                break;
-            }
+            if (charArray1[i] != charArray2[i])
+                return false;
         }
-        return flag;
+        return true;
     }
 }
