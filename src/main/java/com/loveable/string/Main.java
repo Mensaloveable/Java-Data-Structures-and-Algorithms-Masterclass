@@ -1,9 +1,6 @@
 package com.loveable.string;
 
-import com.loveable.string.interviewQuestion.OneAway;
-import com.loveable.string.interviewQuestion.Permutation;
-import com.loveable.string.interviewQuestion.URLify;
-import com.loveable.string.interviewQuestion.UniqueString;
+import com.loveable.string.interviewQuestion.*;
 
 public class Main {
     public static void main(String[] args) {
@@ -37,6 +34,11 @@ public class Main {
         boolean b1 = OneAway.hasOneOrZeroEdit("pales", "pale"); //true
         boolean b2 = OneAway.hasOneOrZeroEdit("pale", "bale"); //true
         boolean b3 = OneAway.hasOneOrZeroEdit("pale", "bake"); //false
-        System.out.println(b + " and " + b1 + " and " + b2 + " and " + b3);
+        System.out.println(b + " and " + b1 + " and " + b2 + " and " + b3);//todo refactor
+
+        System.out.println("***Compression***");
+        str1 = "aabcccccaaa";
+        String compressed = Compression.compress(str1);
+        System.out.println("The compressed form of " + str1 + " is " + compressed);
     }
 }
