@@ -26,6 +26,16 @@ public class Linked_List<T> {
         size++;
     }
 
+    public void addLast(T element) {
+        Node<T> newNode = new Node<>(element);
+        if (head == null) {
+            head = tail = newNode;
+        } else {
+            newNode.next = tail;
+            tail = newNode;
+        }
+    }
+
     public int size() {
         return size;
     }
