@@ -31,9 +31,10 @@ public class Linked_List<T> {
         if (head == null) {
             head = tail = newNode;
         } else {
-            newNode.next = tail;
+            tail.next = newNode;
             tail = newNode;
         }
+        size++;
     }
 
     public int size() {
@@ -44,7 +45,7 @@ public class Linked_List<T> {
     public String toString() {
         StringBuilder elements = new StringBuilder("[");
         Node<T> next = head;
-        while(next != null) {
+        while (next != null) {
             elements.append(next.data).append(", ");
             next = next.next;
         }
