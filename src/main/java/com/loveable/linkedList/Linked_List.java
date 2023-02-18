@@ -37,6 +37,31 @@ public class Linked_List<T> {
         size++;
     }
 
+    public void add(int index, T element) {
+        if (index == 0) {
+//            Node<T> newNode = new Node<>(element);
+//            head = tail = newNode;
+            addFirst(element);
+        } else if (index == size) {
+//            Node<T> newNode = new Node<>(element);
+//            tail.next = newNode;
+//            tail = newNode;
+            addLast(element);
+        } else if (index > 0 && index < size) {
+            Node<T> newNode = new Node<>(element);
+            Node<T> node = head;
+            while (index >= 0) {
+                node = node.next;
+                index--;
+            }
+            newNode.next = node;
+            node.next = newNode;
+        } else {
+            throw new IndexOutOfBoundsException("Index " + index);
+        }
+        size++;
+    }
+
     public int size() {
         return size;
     }
