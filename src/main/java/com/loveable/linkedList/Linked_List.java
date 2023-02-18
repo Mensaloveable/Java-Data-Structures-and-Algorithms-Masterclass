@@ -1,6 +1,7 @@
 package com.loveable.linkedList;
 
 public class Linked_List<T> {
+    int size;
 
     public static class Node<T> {
         T data;
@@ -9,14 +10,6 @@ public class Linked_List<T> {
         public Node(T data) {
             this.data = data;
         }
-
-        @Override
-        public String toString() {
-            return "Node{" +
-                    "data=" + data +
-                    ", node=" + next +
-                    '}';
-        }
     }
 
     private Node<T> head;
@@ -24,19 +17,29 @@ public class Linked_List<T> {
 
     public void addFirst(T element) {
         Node<T> newNode = new Node<>(element);
-        if (head == null)
+        if (head == null) {
             head = tail = newNode;
-        else {
+        } else {
             newNode.next = head;
             head = newNode;
         }
+        size++;
+    }
+
+    public int size() {
+        return size;
     }
 
     @Override
     public String toString() {
-        return "Linked_List{" +
-                "head=" + head +
-                ", tail=" + tail +
-                '}';
+        StringBuilder elements = new StringBuilder("[");
+        Node<T> next = head;
+        while(next != null) {
+            elements.append(next.data).append(", ");
+            next = next.next;
+        }
+        String result = elements.toString();
+        result = result.substring(0, result.length() - 2) + "]";
+        return result;
     }
 }
