@@ -39,28 +39,25 @@ public class Linked_List<T> {
 
     public void add(int index, T element) {
         if (index == 0) {
-//            Node<T> newNode = new Node<>(element);
-//            head = tail = newNode;
             addFirst(element);
         } else if (index == size) {
-//            Node<T> newNode = new Node<>(element);
-//            tail.next = newNode;
-//            tail = newNode;
             addLast(element);
         } else if (index > 0 && index < size) {
             Node<T> newNode = new Node<>(element);
             Node<T> node = head;
-            while (index >= 0) {
+            while (index > 1) {
                 node = node.next;
                 index--;
             }
-            newNode.next = node;
+            newNode.next = node.next;
             node.next = newNode;
+            size++;
         } else {
-            throw new IndexOutOfBoundsException("Index " + index);
+            throw new IndexOutOfBoundsException("Index " + index + " is out of bound");
         }
-        size++;
     }
+
+
 
     public int size() {
         return size;
@@ -68,6 +65,8 @@ public class Linked_List<T> {
 
     @Override
     public String toString() {
+        if (head == null)
+            return "[]";
         StringBuilder elements = new StringBuilder("[");
         Node<T> next = head;
         while (next != null) {
