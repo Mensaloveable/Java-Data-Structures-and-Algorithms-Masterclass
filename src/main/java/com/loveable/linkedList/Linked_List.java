@@ -1,5 +1,7 @@
 package com.loveable.linkedList;
 
+import java.util.NoSuchElementException;
+
 public class Linked_List<T> {
     int size;
 
@@ -57,7 +59,12 @@ public class Linked_List<T> {
         }
     }
 
-
+    public void removeFirst() {
+        if (head == null)
+            throw new NoSuchElementException();
+        head = head.next;
+        size--;
+    }
 
     public int size() {
         return size;
