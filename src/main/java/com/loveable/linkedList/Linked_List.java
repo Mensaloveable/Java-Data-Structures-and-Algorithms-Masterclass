@@ -110,6 +110,16 @@ public class Linked_List<T> {
         return head.data;
     }
 
+    public boolean contains(T element) {
+        Node<T> node = head;
+        while (node != null) {
+            if (node.data == element)
+                return true;
+            node = node.next;
+        }
+        return false;
+    }
+
     public int size() {
         return size;
     }
