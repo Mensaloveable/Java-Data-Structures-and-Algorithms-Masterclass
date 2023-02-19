@@ -44,6 +44,8 @@ public class Main {
 
         System.out.println("linkedList.contains(null) is: " + linkedList.contains(null));
 
+        System.out.println("Last element is: "+linkedList.getLast());
+
         linkedList.removeFirst();
         System.out.println(linkedList);
 

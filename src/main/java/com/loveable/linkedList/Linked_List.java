@@ -110,6 +110,12 @@ public class Linked_List<T> {
         return head.data;
     }
 
+    public T getLast() {
+        if (head == null)
+            throw new NoSuchElementException();
+        return tail.data;
+    }
+
     public boolean contains(T element) {
         Node<T> node = head;
         while (node != null) {
