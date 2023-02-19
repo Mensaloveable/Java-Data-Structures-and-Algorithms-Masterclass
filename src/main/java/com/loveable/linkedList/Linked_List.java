@@ -84,6 +84,26 @@ public class Linked_List<T> {
         size--;
     }
 
+    public void remove(int index) {
+        if (head == null)
+            throw new NoSuchElementException();
+        if (index == 0) {
+            removeFirst();
+        } else if (index == size) {
+            removeLast();
+        } else if (index > 0 && index < size) {
+            Node<T> node = head;
+            while (index > 1) {
+                node = node.next;
+                index--;
+            }
+            node.next = node.next.next;
+            size--;
+        } else {
+            throw new IndexOutOfBoundsException("Index " + index + " is out of bound");
+        }
+    }
+
     public int size() {
         return size;
     }
