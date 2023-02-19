@@ -38,6 +38,8 @@ public class Main {
         linkedList.add(3, 6);
         System.out.println(linkedList);
 
+        System.out.println("Third element is: " + linkedList.get(2));
+
         System.out.println("linkedList.contains(6) is: " + linkedList.contains(6));
 
         System.out.println("linkedList.contains(5) is: " + linkedList.contains(5));

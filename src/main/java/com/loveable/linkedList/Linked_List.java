@@ -116,6 +116,22 @@ public class Linked_List<T> {
         return tail.data;
     }
 
+    public T get(int index) {
+        if (index == 0)
+            return getFirst();
+        if (index == size)
+            return getLast();
+        if (index > 0 && index < size) {
+            Node<T> node = head;
+            while (index > 0) {
+                node = node.next;
+                index--;
+            }
+            return node.data;
+        }
+        throw  new IndexOutOfBoundsException("Index " + index + " is out of bound");
+    }
+
     public boolean contains(T element) {
         Node<T> node = head;
         while (node != null) {
