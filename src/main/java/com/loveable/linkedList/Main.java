@@ -64,6 +64,15 @@ public class Main {
 
         System.out.println("First element is: " + linkedList.getFirst());
 
+
+        System.out.println("clear method");
+        linkedList.clear();
+        System.out.println(linkedList);
+
+        linkedList.addLast(9);
+        linkedList.addFirst(8);
+        System.out.println(linkedList);
+
         System.out.println("last size = " + linkedList.size());
     }
 }

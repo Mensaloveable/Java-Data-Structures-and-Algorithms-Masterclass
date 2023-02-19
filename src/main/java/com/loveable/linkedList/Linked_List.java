@@ -132,6 +132,10 @@ public class Linked_List<T> {
         throw  new IndexOutOfBoundsException("Index " + index + " is out of bound");
     }
 
+    public void clear() {
+        head = tail = null;
+    }
+
     public boolean contains(T element) {
         Node<T> node = head;
         while (node != null) {
