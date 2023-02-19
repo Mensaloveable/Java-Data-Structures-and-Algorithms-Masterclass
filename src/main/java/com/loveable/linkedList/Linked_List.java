@@ -104,6 +104,12 @@ public class Linked_List<T> {
         }
     }
 
+    public T getFirst() {
+        if (head == null)
+            throw new NoSuchElementException();
+        return head.data;
+    }
+
     public int size() {
         return size;
     }
