@@ -120,6 +120,10 @@ public class Linked_List<T> {
         return false;
     }
 
+    public boolean isEmpty() {
+        return head == null;
+    }
+
     public int size() {
         return size;
     }
