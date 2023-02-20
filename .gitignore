@@ -1,11 +1,7 @@
 # Default ignored files
-/Users/decagon/Desktop/Testing/Java Data Structure and Algorithm/target
 /target/
-*/target/*
-*/target/**
-*.class
 /shelf/
-/workspace.xml
+/.idea/workspace.xml
 # Editor-based HTTP Client requests
 /httpRequests/
 # Datasource local storage ignored files
